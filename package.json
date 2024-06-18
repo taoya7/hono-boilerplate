@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev tsx watch --clear-screen=false src/main.ts",
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/index.js",
+    "test": "cross-env NODE_ENV=test vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.11.3",
+    "@hono/swagger-ui": "^0.2.2",
+    "@hono/zod-openapi": "^0.14.5",
+    "@repo/utils": "workspace:^",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "hono": "^4.4.6",
+    "ioredis": "^5.4.1",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20.14.4",
+    "eslint": "^9.5.0",
+    "tsx": "^4.7.1",
+    "turbo": "^2.0.4",
+    "unbuild": "^2.0.0",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
+  }
+}

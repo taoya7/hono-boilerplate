@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`common file mime type 1`] = `undefined`;
+
+exports[`common image mime type 1`] = `undefined`;

@@ -1,0 +1,44 @@
+{
+  "name": "@repo/utils",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest --run",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "clone": "^2.1.2",
+    "colord": "2.9.3",
+    "crypto-js": "^4.1.1",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.35",
+    "moment": "^2.29.4",
+    "nanoid": "^3.3.5",
+    "slugify": "^1.6.6",
+    "uuid": "^9.0.1",
+    "which-browser": "^0.7.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/clone": "^2.1.4",
+    "@types/crypto-js": "^4.2.2",
+    "@types/lodash": "^4.17.0",
+    "@types/mime-types": "^2.1.4",
+    "@types/uuid": "^9.0.8"
+  }
+}
