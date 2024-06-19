@@ -6,11 +6,11 @@ WORKDIR /app
 RUN sed -i "s@http://dl-cdn.alpinelinux.org/@https://repo.huaweicloud.com/@g" /etc/apk/repositories
 RUN apk add --no-cache tzdata
 ENV TZ="Asia/Shanghai"
-RUN npm config set registry https://registry.npmmirror.com
-COPY package.json ./package.json
-RUN npm install -g pnpm
-RUN pnpm install
 COPY . .
+RUN npm install -g pnpm
+RUN npm install -g nrm
+RUN nrm use taobao
+RUN pnpm i 
 RUN pnpm run build
 FROM base AS runner
 WORKDIR /app
