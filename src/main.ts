@@ -9,8 +9,8 @@ logger.info(`🔗 Local: 👉 ${APP_DOMAIN}`)
 swaggerEnable && logger.info(`🔗 Swagger:  👉 ${APP_DOMAIN}/api/doc.html`)
 const server = serve({
   fetch: app.fetch,
-  hostname: '127.0.0.1',
-  port: 3000,
+  hostname: HOST,
+  port: PORT,
 })
 
 export default server
