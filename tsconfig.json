@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "incremental": true,
+    "incremental": false,
     "target": "es2020",
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
@@ -9,12 +9,14 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@": [
+        "./src"
       ]
     },
     "resolveJsonModule": true,
     "strict": true,
     "noImplicitAny": false,
-    "noEmit": true,
     "outDir": "./dist",
     "esModuleInterop": true,
     "isolatedModules": true,

@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev tsx watch --clear-screen=false src/main.ts",
-    "build": "rm -rf dist && tsc",
-    "start": "node dist/index.js",
-    "test": "cross-env NODE_ENV=test vitest run"
+    "build": "rm -rf dist && tsup",
+    "start": "node dist/main.js",
+    "test": "cross-env NODE_ENV=test vitest run",
+    "obfuscator": "tsx ./scripts/obfuscator-code.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.3",
@@ -27,6 +28,8 @@
     "@types/crypto-js": "^4.2.2",
     "@types/node": "^20.14.4",
     "eslint": "^9.5.0",
+    "javascript-obfuscator": "^4.1.1",
+    "tsup": "^8.1.0",
     "tsx": "^4.7.1",
     "turbo": "^2.0.4",
     "unbuild": "^2.0.0",
