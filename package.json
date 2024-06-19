@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.11.3",
-    "@hono/swagger-ui": "^0.2.2",
+    "@hono/swagger-ui": "^0.3.0",
     "@hono/zod-openapi": "^0.14.5",
     "@repo/utils": "workspace:^",
     "cross-env": "^7.0.3",
