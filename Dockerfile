@@ -9,7 +9,7 @@ ENV TZ="Asia/Shanghai"
 COPY . .
 RUN npm install -g pnpm
 RUN npm install -g nrm
-RUN nrm use taobao
+RUN nrm use npm
 RUN pnpm i 
 RUN pnpm run build
 FROM base AS runner
