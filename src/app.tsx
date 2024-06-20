@@ -1,14 +1,27 @@
-import { Hono } from 'hono'
+import { OpenAPIHono } from '@hono/zod-openapi'
 import { compress } from 'hono/compress'
+import { csrf } from 'hono/csrf'
 import { trimTrailingSlash } from 'hono/trailing-slash' // https://hono.dev/middleware/builtin/trailing-slash
+import { swaggerUI } from '@hono/swagger-ui'
 import registry from './registry'
-import api from '@/api'
 import { notFoundHandler } from '@/common/errors'
+import { demoRouter } from '@/modules/demo/demo.router'
 
-const app = new Hono()
+const app = new OpenAPIHono({ strict: true })
 app.route('/', registry)
-app.route('/api', api)
+app.route('/', demoRouter)
+// swagger
+app.doc31('/api/api-spec', {
+  openapi: '3.1.0',
+  info: {
+    version: '1.0.0',
+    title: '',
+    description: '',
+  },
+})
+  .get('/doc.html', swaggerUI({ url: '/api/api-spec' }))
 app.use(trimTrailingSlash())
 app.use(compress())
+app.use(csrf())
 app.notFound(notFoundHandler)
 export default app

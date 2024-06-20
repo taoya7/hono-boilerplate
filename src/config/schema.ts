@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 export const configSchema = z.object({
   ENV: z.enum(['development', 'test', 'production']).default('development').describe('运行环境'),
-  HOST: z.string().default('127.0.0.1').describe('HOST'),
+  HOST: z.string().default('0.0.0.0').describe('HOST'),
   PORT: z.coerce.number().default(3000).describe('PORT'),
   APP_DOMAIN: z.string().default('http://127.0.0.1:3000').describe('APP_DOMAIN'),
 
