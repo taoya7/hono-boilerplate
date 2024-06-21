@@ -27,5 +27,6 @@ export default antfu({
     'ts/consistent-type-imports': 'off',
     'ts/no-require-imports': 'off',
     'ts/no-var-requires': 'off',
+    'import/no-mutable-exports': 'off',
   },
 })
