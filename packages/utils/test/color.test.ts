@@ -17,7 +17,6 @@ it('addColorAlpha(添加颜色透明度)', () => {
 })
 it('混合颜色', () => {
   const color = mixColor('#ffffff', '#000000', 0.5)
-  console.log(color)
 })
 
 it('invalid hex', () => {

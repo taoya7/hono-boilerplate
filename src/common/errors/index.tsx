@@ -1,7 +1,7 @@
 import type { ErrorHandler, NotFoundHandler } from 'hono'
 import NotFoundError from './types/not-found'
 import { config } from '@/config'
-import logger from '@/utils/logger'
+import Logger from '@/logging/logger'
 import Error from '@/views/error'
 
 /**
@@ -19,7 +19,7 @@ export const errorHandler: ErrorHandler = (error, ctx) => {
       break
   }
   const message = `${error.name}: ${errorMessage}`
-  logger.error(`Error in ${requestPath}: ${message}`)
+  Logger.error(`Error in ${requestPath}: ${message}`, error)
   return config.ENV === 'production'
     ? ctx.json({
       error: {
