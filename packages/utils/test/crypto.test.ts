@@ -7,6 +7,4 @@ it('加解密测试', () => {
   const res = crypto.encrypt({
     message: text,
   })
-  console.log(res)
-  console.log(crypto.decrypt(res))
 })
