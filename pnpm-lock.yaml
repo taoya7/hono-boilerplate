@@ -13,13 +13,13 @@ importers:
         version: 1.11.3
       '@hono/swagger-ui':
         specifier: ^0.2.2
-        version: 0.2.2(hono@4.4.6)
+        version: 0.2.2(hono@4.4.7)
       '@hono/zod-openapi':
         specifier: ^0.14.5
-        version: 0.14.5(hono@4.4.6)(zod@3.23.8)
+        version: 0.14.5(hono@4.4.7)(zod@3.23.8)
       '@hono/zod-validator':
         specifier: ^0.2.2
-        version: 0.2.2(hono@4.4.6)(zod@3.23.8)
+        version: 0.2.2(hono@4.4.7)(zod@3.23.8)
       '@repo/utils':
         specifier: workspace:^
         version: link:packages/utils
@@ -40,7 +40,7 @@ importers:
         version: 16.4.5
       hono:
         specifier: ^4.4.6
-        version: 4.4.6
+        version: 4.4.7
       ioredis:
         specifier: ^5.4.1
         version: 5.4.1
@@ -1197,15 +1197,15 @@ packages:
     engines: {node: '>=18.14.1'}
     dev: false
 
-  /@hono/swagger-ui@0.2.2(hono@4.4.6):
+  /@hono/swagger-ui@0.2.2(hono@4.4.7):
     resolution: {integrity: sha512-Bco6XdKkTP7yIVWXpquLQayvjwzDmsmsESjF7VcrU/ZPTYafGvvpHf7Z6PHTWyp+JpdYORZXlyZ75T3At2KfAA==}
     peerDependencies:
       hono: '*'
     dependencies:
-      hono: 4.4.6
+      hono: 4.4.7
     dev: false
 
-  /@hono/zod-openapi@0.14.5(hono@4.4.6)(zod@3.23.8):
+  /@hono/zod-openapi@0.14.5(hono@4.4.7)(zod@3.23.8):
     resolution: {integrity: sha512-+CXmjUlWSvYd1dDUcq2umdCD5ReKpygIIsT8rAWYEM0EKFQOqg1w1y8SvWfwrP0dL8pkSZmcRatMjH9vPvzoGg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -1213,18 +1213,18 @@ packages:
       zod: 3.*
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.1.0(zod@3.23.8)
-      '@hono/zod-validator': 0.2.2(hono@4.4.6)(zod@3.23.8)
-      hono: 4.4.6
+      '@hono/zod-validator': 0.2.2(hono@4.4.7)(zod@3.23.8)
+      hono: 4.4.7
       zod: 3.23.8
     dev: false
 
-  /@hono/zod-validator@0.2.2(hono@4.4.6)(zod@3.23.8):
+  /@hono/zod-validator@0.2.2(hono@4.4.7)(zod@3.23.8):
     resolution: {integrity: sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
     dependencies:
-      hono: 4.4.6
+      hono: 4.4.7
       zod: 3.23.8
     dev: false
 
@@ -3675,8 +3675,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@4.4.6:
-    resolution: {integrity: sha512-XGRnoH8WONv60+PPvP9Sn067A9r/8JdHDJ5bgon0DVEHeR1cJPkWjv2aT+DBfMH9/mEkYa1+VEVFp1DT1lIwjw==}
+  /hono@4.4.7:
+    resolution: {integrity: sha512-WoQWFQyVFEVRtIzP5sHPv7nvIw+RYL/HRnvnOCDxj6A+BtrwuC9S0vryZbV4IyFcNgOJ87r/phDiC1x2eEo4Gg==}
     engines: {node: '>=16.0.0'}
     dev: false
 
