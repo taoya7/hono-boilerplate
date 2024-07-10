@@ -1,6 +1,6 @@
 import { IncomingMessage } from 'node:http'
 import winston from 'winston'
-import chalk from 'chalk'
+import ansis from 'ansis'
 import { isArray, isEmpty, isObject, isString } from 'lodash-es'
 import { config } from '@/config'
 
@@ -46,7 +46,7 @@ class Logger {
             winston.format.printf(
               ({ message, level, label, ...extra }) =>
                     `${level}:${
-                      label ? chalk.bold(`[${label}] `) : ''
+                      label ? ansis.bold(`[${label}] `) : ''
                     }${message} ${isEmpty(extra) ? '' : JSON.stringify(extra)}`,
             ),
           ),
