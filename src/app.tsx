@@ -4,6 +4,8 @@ import { csrf } from 'hono/csrf'
 import { trimTrailingSlash } from 'hono/trailing-slash' // https://hono.dev/middleware/builtin/trailing-slash
 import { swaggerUI } from '@hono/swagger-ui'
 import { Context } from 'hono'
+import { cors } from 'hono/cors'
+
 import registry from './registry'
 import RedisAdapter from './storage/redis'
 import { notFoundHandler } from '@/common/errors'
@@ -41,5 +43,6 @@ app.get('/_health', async (ctx: Context) => {
 app.use(trimTrailingSlash())
 app.use(compress())
 app.use(csrf())
+app.use(cors())
 app.notFound(notFoundHandler)
 export default app
