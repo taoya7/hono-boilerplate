@@ -10,13 +10,11 @@ import registry from './registry'
 import RedisAdapter from './storage/redis'
 import { notFoundHandler } from '@/common/errors'
 import { demoRouter } from '@/modules/demo/demo.router'
-import errorsRouter from '@/routes/errors'
 import Logger from '@/logging/logger'
 
 const app = new OpenAPIHono({ strict: true })
 app.route('/', registry)
 app.route('/', demoRouter)
-app.route('/', errorsRouter)
 // swagger
 app.doc31('/api/api-spec', {
   openapi: '3.1.0',

@@ -1,10 +1,14 @@
-import { Hono } from 'hono'
+import { Context, Hono } from 'hono'
 import { serveStatic } from '@hono/node-server/serve-static'
-import index from '@/routes/index'
 import robotstxt from '@/routes/robots.txt'
 
 const app = new Hono()
-app.get('/', index)
+// 首页
+app.get('/', (ctx: Context) => {
+  return ctx.json({
+    message: 'Hello World🌍',
+  })
+})
 app.get('/robots.txt', robotstxt)
 // 静态资源处理
 app.use(

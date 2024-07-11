@@ -1,7 +1,5 @@
 import type { FC } from 'hono/jsx'
-import dayjs from 'dayjs'
 import { Layout } from '@/views/layout'
-import { gitDate, gitHash } from '@/utils/git-hash'
 
 const Index: FC<{
   requestPath: string
@@ -42,16 +40,6 @@ const Index: FC<{
             Node Version:
             {' '}
             <code className="ml-2 bg-zinc-100">{nodeVersion}</code>
-          </p>
-          <p className="message">
-            Git Hash:
-            {' '}
-            <code className="ml-2 bg-zinc-100">{gitHash}</code>
-          </p>
-          <p className="message">
-            Git Date:
-            {' '}
-            <code className="ml-2 bg-zinc-100">{dayjs(gitDate).format('YYYY/MM/DD HH:mm:ss')}</code>
           </p>
         </div>
       </div>
