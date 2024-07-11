@@ -14,7 +14,7 @@ if (config.listenInaddrAny) {
     Logger.info('lifecycle', `🔗 Network: 👉 http://${ip}:${PORT}`)
   }
 }
-swaggerEnable && Logger.info('lifecycle', `🔗 Swagger:  👉 ${APP_DOMAIN}/api/doc.html`)
+swaggerEnable && Logger.info('lifecycle', `🔗 Swagger:  👉 ${APP_DOMAIN}/doc.html`)
 const server = serve({
   fetch: app.fetch,
   hostname: HOST,
