@@ -1,24 +1,20 @@
 import { serve } from '@hono/node-server'
 import { getLocalhostAddress } from './utils/common'
 import Logger from '@/logging/logger'
-import app from '@/app'
 import { config } from '@/config'
+import app from '@/app'
 
-const { PORT, HOST, APP_DOMAIN, swaggerEnable } = config
-
+const { APP_DOMAIN } = config
 const hostIPList = getLocalhostAddress()
-
-Logger.info('lifecycle', `🎉 Server is running on port ${PORT} 📢`)
+Logger.info('lifecycle', `🎉 Server is running on port ${config.server.port} 📢`)
 if (config.listenInaddrAny) {
   for (const ip of hostIPList) {
-    Logger.info('lifecycle', `🔗 Network: 👉 http://${ip}:${PORT}`)
+    Logger.info('lifecycle', `🔗 Network: 👉 http://${ip}:${config.server.port}`)
   }
 }
-swaggerEnable && Logger.info('lifecycle', `🔗 Swagger:  👉 ${APP_DOMAIN}/doc.html`)
-const server = serve({
+config.server.swagger.enable && Logger.info('lifecycle', `🔗 Swagger:  👉 ${APP_DOMAIN}/doc.html`)
+serve({
   fetch: app.fetch,
-  hostname: HOST,
-  port: PORT,
+  hostname: config.server.host,
+  port: config.server.port,
 })
-
-export default server

@@ -33,7 +33,7 @@ class Logger {
         'verbose',
         'debug',
         'silly',
-      ].includes(config.loggerLevel)
+      ].includes(config?.loggerLevel)
         ? config.loggerLevel
         : 'info',
     })

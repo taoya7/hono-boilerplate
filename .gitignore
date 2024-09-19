@@ -1,3 +1,5 @@
+
+.idea/
 # dev
 .yarn/
 !.yarn/releases
@@ -29,3 +31,5 @@ lerna-debug.log*
 
 # output
 dist
+
+application-dev.yml

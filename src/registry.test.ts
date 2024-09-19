@@ -11,11 +11,11 @@ describe('registry', () => {
   })
   // robots.txt
   it('/robots.txt', async () => {
-    config.disallowRobot = false
+    config.server.seo.allowRobot = false
     const response404 = await app.request('/robots.txt')
     expect(response404.status).toBe(404)
 
-    config.disallowRobot = true
+    config.server.seo.allowRobot = true
     const response = await app.request('/robots.txt')
     expect(response.status).toBe(200)
 

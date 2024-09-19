@@ -1,6 +1,6 @@
 import { Buffer } from 'node:buffer'
 import Redis, { RedisOptions } from 'ioredis'
-import defaults from 'lodash-es/defaults'
+import { defaults } from 'lodash-es'
 import { config } from '@/config'
 import Logger from '@/logging/logger'
 

@@ -2,7 +2,7 @@ import type { Handler } from 'hono'
 import { config } from '@/config'
 
 const handler: Handler = (ctx) => {
-  if (config.disallowRobot) {
+  if (config.server.seo.allowRobot) {
     return ctx.text('User-agent: *\nDisallow: /')
   }
   else {
