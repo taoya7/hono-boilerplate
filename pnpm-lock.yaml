@@ -37,7 +37,7 @@ importers:
         version: 6.21.0
       ansis:
         specifier: ^3.2.0
-        version: 3.2.0
+        version: 3.3.2
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -3074,8 +3074,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /ansis@3.2.0:
-    resolution: {integrity: sha512-Yk3BkHH9U7oPyCN3gL5Tc7CpahG/+UFv/6UG03C311Vy9lzRmA5uoxDTpU9CO3rGHL6KzJz/pdDeXZCZ5Mu/Sg==}
+  /ansis@3.3.2:
+    resolution: {integrity: sha512-cFthbBlt+Oi0i9Pv/j6YdVWJh54CtjGACaMPCIrEV4Ha7HWsIjXDwseYV79TIL0B4+KfSwD5S70PeQDkPUd1rA==}
     engines: {node: '>=15'}
     dev: false
 
