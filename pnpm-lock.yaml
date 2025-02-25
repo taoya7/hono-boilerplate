@@ -122,7 +122,7 @@ importers:
         version: 4.19.3
       turbo:
         specifier: ^2.0.4
-        version: 2.0.4
+        version: 2.4.3
       vite-tsconfig-paths:
         specifier: ^4.3.2
         version: 4.3.2(typescript@5.7.3)
@@ -3164,7 +3164,7 @@ packages:
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.5.2
+      postcss: 8.5.3
       source-map-js: 1.2.1
     dev: true
 
@@ -6271,8 +6271,8 @@ packages:
       source-map-js: 1.2.0
     dev: true
 
-  /postcss@8.5.2:
-    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
+  /postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.8
@@ -7112,64 +7112,64 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /turbo-darwin-64@2.0.4:
-    resolution: {integrity: sha512-x9mvmh4wudBstML8Z8IOmokLWglIhSfhQwnh2gBCSqabgVBKYvzl8Y+i+UCNPxheCGTgtsPepTcIaKBIyFIcvw==}
+  /turbo-darwin-64@2.4.3:
+    resolution: {integrity: sha512-TFKiCSJAAN8E7g8isVzocm5OaUGjXn5DVBCeIFmJ2dKe/wY64Gvw37Y5HnyKZLM2JWdEI2SkXrDLNfGMGwfXyg==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@2.0.4:
-    resolution: {integrity: sha512-/B1Ih8zPRGVw5vw4SlclOf3C/woJ/2T6ieH6u54KT4wypoaVyaiyMqBcziIXycdObIYr7jQ+raHO7q3mhay9/A==}
+  /turbo-darwin-arm64@2.4.3:
+    resolution: {integrity: sha512-pRCRHe5LPyF9L0qxCMGycl2NM9OV5obrG+J4/foO/e7a0yfwMRnQ7lJdHrrT5zfEYrj0/WN0ZxsaRAqyM3qZZw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@2.0.4:
-    resolution: {integrity: sha512-6aG670e5zOWu6RczEYcB81nEl8EhiGJEvWhUrnAfNEUIMBEH1pR5SsMmG2ol5/m3PgiRM12r13dSqTxCLcHrVg==}
+  /turbo-linux-64@2.4.3:
+    resolution: {integrity: sha512-4SZj0K1OKXFBwGe7bNVYKcNJct6mdESWfq0zEYUp2yiWPxcihMWc60aGTccI5OC54UxhS52PcrBoiKQzIB6vkA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@2.0.4:
-    resolution: {integrity: sha512-AXfVOjst+mCtPDFT4tCu08Qrfv12Nj7NDd33AjGwV79NYN1Y1rcFY59UQ4nO3ij3rbcvV71Xc+TZJ4csEvRCSg==}
+  /turbo-linux-arm64@2.4.3:
+    resolution: {integrity: sha512-/wp0csB7GW6VUYsKAuMjVtvGy+Bo2g8RyE+5yx3/rD9+e8wHy0TZUiAiRtj0aeVJXiVPd/MA6u6IdxjV95/qxA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@2.0.4:
-    resolution: {integrity: sha512-QOnUR9hKl0T5gq5h1fAhVEqBSjpcBi/BbaO71YGQNgsr6pAnCQdbG8/r3MYXet53efM0KTdOhieWeO3KLNKybA==}
+  /turbo-windows-64@2.4.3:
+    resolution: {integrity: sha512-GpZl4YiIqf1eNFHys+tT9LgCfTi67TykOdI6xD7PB+oFsZisjQzhAVu/BW3oTe6lHRe0zndEQMuodP+fGAXHbA==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@2.0.4:
-    resolution: {integrity: sha512-3v8WpdZy1AxZw0gha0q3caZmm+0gveBQ40OspD6mxDBIS+oBtO5CkxhIXkFJJW+jDKmDlM7wXDIGfMEq+QyNCQ==}
+  /turbo-windows-arm64@2.4.3:
+    resolution: {integrity: sha512-AjyuOdQc2wRn2C+RksQ8rhpzvvpD3FOG3hUz9S9uhE5FpgUFUynGnYgFlKVnHkL/k7aslBL4dzNE7S4UaJeywA==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@2.0.4:
-    resolution: {integrity: sha512-Ilme/2Q5kYw0AeRr+aw3s02+WrEYaY7U8vPnqSZU/jaDG/qd6jHVN6nRWyd/9KXvJGYM69vE6JImoGoyNjLwaw==}
+  /turbo@2.4.3:
+    resolution: {integrity: sha512-CpUHqrLTnV9R41RiWMSj9ZNHl++I7eTUIU+pH5O5a/2fRMhiKI6JdgBszuQ2YyaZYXkZZh/oHwbgzS1pug0zMg==}
     hasBin: true
     optionalDependencies:
-      turbo-darwin-64: 2.0.4
-      turbo-darwin-arm64: 2.0.4
-      turbo-linux-64: 2.0.4
-      turbo-linux-arm64: 2.0.4
-      turbo-windows-64: 2.0.4
-      turbo-windows-arm64: 2.0.4
+      turbo-darwin-64: 2.4.3
+      turbo-darwin-arm64: 2.4.3
+      turbo-linux-64: 2.4.3
+      turbo-linux-arm64: 2.4.3
+      turbo-windows-64: 2.4.3
+      turbo-windows-arm64: 2.4.3
     dev: true
 
   /type-check@0.3.2:
